@@ -5,3 +5,5 @@ RUN true && \
   && chmod 700 /etc/sudoers \
   && echo 'root    ALL=(ALL:ALL) ALL' > /etc/sudoers \
   && chmod 440 /etc/sudoers
+
+COPY  utils/retry /usr/local/bin/
